@@ -111,8 +111,8 @@ button:hover {
 }
 
 .film-image {
-  width: 210px;
-  height: 120px;
+  width: 200px;
+  height: 300px;
   border-radius: 4px;
   cursor: pointer;
 }

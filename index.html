@@ -1,81 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
-</head>
-<body>
-  <header>
-    <div class="header-container">
-      <div class="header-menu">
-        <img src="images/logo.svg" width="100px" height="50px" alt="">
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Bombando</a>
-          <a href="#">Minha lista</a>
-          <a href="#">Navegar por idiomas</a>
-        </nav>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-menu">
+          <img src="images/logo.svg" width="100px" height="50px" alt="" />
+          <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Bombando</a>
+            <a href="#">Minha lista</a>
+            <a href="#">Navegar por idiomas</a>
+          </nav>
+        </div>
+        <div>
+          <nav>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#">Infantil</a>
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="#">Conta</a>
+          </nav>
+        </div>
       </div>
-      <div>
-        <nav>
-          <a href="#"><i class="fas fa-search"></i></a>
-          <a href="#">Infantil</a>
-          <a href="#"><i class="fas fa-bell"></i></a>
-          <a href="#">Conta</a>
-        </nav>
+    </header>
+    <main>
+      <div class="main-movie">
+        <h3>Matrix 4 Resurrections</h3>
+        <div class="sinopse">
+          <p>
+            Em um mundo de duas realidades — a vida cotidiana e o que está por
+            trás dela —, Thomas Anderson terá que escolher seguir o coelho
+            branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a
+            única maneira de entrar ou sair da Matrix, que é mais forte, mais
+            segura e mais perigosa do que nunca.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button class="btn-primary">
+            <i class="fas fa-play"></i>
+            Assistir
+          </button>
+          <button class="btn-secondary">
+            <i class="fas fa-info-circle"></i>
+            Mais informações
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="main-movie">
-      <h3>Matrix 4 Resurrections</h3>
-      <div class="sinopse">
-        <p>
-          Em um mundo de duas realidades — a vida cotidiana e o que está por trás dela —, Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais perigosa do que nunca.
-        </p>
-      </div>
-      <div class="btn-container">
-        <button class="btn-primary">
-          <i class="fas fa-play"></i>
-          Assistir
-        </button>
-        <button class="btn-secondary">
-          <i class="fas fa-info-circle"></i>
-          Mais informações
-        </button>
-      </div>
-    </div>
-  </main>
-  <div class="films-carousel">
-    <h3>
-      Populares na Netflix
-    </h3>
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img class="film-image" src="images/matrix-poster-01.jpg" alt="Poster Matrix">
-      </div>
-    </div>
-  </div>
-  <div class="films-carousel">
-    <h3>
-      Em alta
-    </h3>
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img class="film-image" src="images/matrix-poster-01.jpg" alt="Poster Matrix">
+    </main>
+    <div class="films-carousel">
+      <h3>Populares na Netflix</h3>
+      <div class="owl-carousel owl-theme">
+        <!-- <div class="item">
+          <img
+            class="film-image"
+            src="images/matrix-poster-01.jpg"
+            alt="Poster Matrix"
+          />
+        </div> -->
       </div>
     </div>
-  </div>
-  <script src="https://kit.fontawesome.com/cd9a66d6cd.js" crossorigin="anonymous"></script>
-  <script src="js/owl/jquery.min.js"></script>
-  <script src="js/owl/owl.carousel.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
+    <div class="films-carousel">
+      <h3>Em alta</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            class="film-image"
+            src="images/matrix-poster-01.jpg"
+            alt="Poster Matrix"
+          />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/cd9a66d6cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
