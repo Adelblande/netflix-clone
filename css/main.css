@@ -1,0 +1,118 @@
+:root {
+  --black-500: #141417;
+  --gray-500: #cccccc;
+  --red-500: #e50914;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black-500);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px;
+  transition: 0.3ms linear all;
+}
+
+header nav a:hover {
+  color: var(--gray-500);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3ms linear all;
+}
+
+button i {
+  margin-right: 4px;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 50px;
+  background: transparent;
+  position: fixed;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu img {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.main-movie {
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/images/matrix-04.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 50px;
+}
+
+.main-movie .sinopse {
+  width: 40%;
+}
+
+.main-movie h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--black-500);
+}
+.btn-secondary {
+  background-color: rgba(143, 142, 142, 0.3);
+  color: var(--white);
+}
+
+.films-carousel {
+  width: 100%;
+  padding: 0 0 50px 50px;
+}
+
+.films-carousel h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.film-image {
+  width: 210px;
+  height: 120px;
+  border-radius: 4px;
+  cursor: pointer;
+}
