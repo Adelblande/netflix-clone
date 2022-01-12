@@ -53,8 +53,10 @@ button:hover {
   justify-content: space-between;
   width: 100%;
   padding: 10px 50px;
-  background: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent 60%);
   position: fixed;
+  transition: 0.3ms linear all;
+  z-index: 9;
 }
 
 .header-menu {
@@ -68,9 +70,8 @@ button:hover {
 }
 
 .main-movie {
-  height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/images/matrix-04.jpg");
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -80,6 +81,9 @@ button:hover {
 
 .main-movie .sinopse {
   width: 40%;
+}
+.main-movie .sinopse p {
+  font-size: 18px;
 }
 
 .main-movie h3 {
@@ -103,6 +107,7 @@ button:hover {
 .films-carousel {
   width: 100%;
   padding: 0 0 50px 50px;
+  margin-top: -200px;
 }
 
 .films-carousel h3 {
@@ -111,8 +116,8 @@ button:hover {
 }
 
 .film-image {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 160px;
   border-radius: 4px;
   cursor: pointer;
 }
