@@ -10,14 +10,12 @@ $(function() {
 
 const BASE_URL = "https://api.themoviedb.org/3";
 const ENDPOINT_MOVIE_POPULAR = "/movie/popular";
+const ENDPOINT_TOP_RATED = "/movie/top_rated";
 const QUERY_STRING = "?api_key=5e7473c25bf84cdc7553905766b32c26&language=pt-BR";
 const URL_IMAGE = "https://image.tmdb.org/t/p/original";
 
 const url = `${BASE_URL}${ENDPOINT_MOVIE_POPULAR}${QUERY_STRING}`;
-const moviePopular = [];
-const carousel = document.getElementsByClassName("owl-carousel owl-theme")[0];
-
-
+const carouselMoviePopular = document.getElementsByClassName("owl-carousel owl-theme")[0];
 
 fetch(url)
   .then((response) => response.json())
@@ -34,10 +32,8 @@ fetch(url)
       />
       `;
 
-      carousel.appendChild(movieHtml);
+      carouselMoviePopular.appendChild(movieHtml);
     });
-    console.log('carousel-->', carousel)
-
     const indexMovie = Math.floor(Math.random() * (response.results.length))
 
     $('.main-movie > h3').html(`${response.results[indexMovie].title}`);
@@ -51,25 +47,68 @@ fetch(url)
       justifyContent: 'center'
     });
 
-  })
-  .catch(function (error) {
+  }).catch(function (error) {
     console.log("erro", error);
+  }).finally(() => {
+    $("#movie-popular").owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        },
+      },
+    });
   });
 
-$(".owl-carousel").owlCarousel({
-  loop: false,
-  margin: 10,
-  nav: false,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
-});
+const urlMovieTopRated = `${BASE_URL}${ENDPOINT_TOP_RATED}${QUERY_STRING}`;
+const carouselMovieTopRated = document.getElementsByClassName("owl-carousel owl-theme")[1];
+
+fetch(urlMovieTopRated)
+  .then((response) => response.json())
+  .then((response) => {
+    response.results.map((movie) => {
+      const movieHtml = document.createElement("div");
+      movieHtml.classList.add("item");
+
+      movieHtml.innerHTML = `
+      <img
+        class="film-image"
+        src="${URL_IMAGE}${movie.backdrop_path}"
+        alt="${movie.title}"
+      />
+      `;
+
+      carouselMovieTopRated.appendChild(movieHtml);
+    });
+  }).catch(function (error) {
+    console.log("erro", error);
+  }).finally(() => {
+    $("#top-rated").owlCarousel({
+      loop: false,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        },
+      },
+    });
+  });
+
+

@@ -1,6 +1,7 @@
 :root {
   --black-500: #141417;
   --gray-500: #cccccc;
+  --gray-600: #a5a4a4;
   --red-500: #e50914;
   --white: #ffffff;
 }
@@ -45,6 +46,12 @@ button i {
 
 button:hover {
   opacity: 0.6;
+}
+
+footer {
+  max-width: 900px;
+  height: 300px;
+  margin: auto;
 }
 
 .header-container {
@@ -112,6 +119,7 @@ button:hover {
 
 .films-carousel h3 {
   font-size: 18px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -120,4 +128,56 @@ button:hover {
   height: 160px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.social-media {
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+
+.social-media i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.links-container div a {
+  color: var(--gray-600);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.links-container div a:hover {
+  text-decoration: underline;
+}
+
+.codigo-servico {
+  margin-top: 20px;
+}
+
+.codigo-servico button {
+  border: 1px solid var(--gray-600);
+  color: var(--gray-600);
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.codigo-servico p {
+  color: var(--gray-600);
+  font-size: 14px;
+}
+.codigo-servico button:hover {
+  color: var(--white);
 }
