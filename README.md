@@ -13,6 +13,6 @@ o intuito aqui não foi deixar idêntico e sim rever alguns conceitos básicos d
 - [The Movie Database API](https://www.themoviedb.org/)
 
 <p>
- <img alt="Laravel" src="https://github.com/Adelblande/netflix-clone/blob/main/images/print-1.png" width="100%">
- <img alt="Laravel" src="https://github.com/Adelblande/netflix-clone/blob/main/images/print-2.png" width="100%">
+ <img alt="Netflix-clone" src="https://github.com/Adelblande/netflix-clone/blob/main/images/print-1.png" width="100%">
+ <img alt="Netflix-clone" src="https://github.com/Adelblande/netflix-clone/blob/main/images/print-2.png" width="100%">
 </p>
