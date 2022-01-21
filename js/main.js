@@ -40,7 +40,7 @@ fetch(url)
     $('.sinopse > p').html(`${response.results[indexMovie].overview}`);
 
     $('.main-movie').css({
-      background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(${URL_IMAGE}${response.results[indexMovie].backdrop_path})`,
+      background: `linear-gradient(rgba(0, 0, 0, 0.2), #141417 90%), url(${URL_IMAGE}${response.results[indexMovie].backdrop_path})`,
       backgroundSize: 'cover',
       display: 'flex',
       flexDirection: 'column',
